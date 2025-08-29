@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    &lt;!&ndash; color, size, shape height of seekbar &ndash;&gt;-->
+<!--    <item android:gravity="center_vertical">-->
+
+<!--    <shape-->
+<!--        android:shape="rectangle">-->
+<!--        <solid android:color="@android:color/transparent"/>-->
+<!--        <stroke-->
+<!--            android:color="@color/green"-->
+<!--            android:width="20dp" />-->
+<!--        <corners-->
+<!--            android:topLeftRadius="0dp"-->
+<!--            android:topRightRadius="0dp"-->
+<!--            android:bottomLeftRadius="250dp"-->
+<!--            android:bottomRightRadius="250dp" />-->
+<!--    </shape>-->
+<!--    </item>-->
+<!--</layer-list>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- color, size, shape height of seekbar -->
+<!--    <item android:gravity="center_vertical">-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <solid android:color="#605A5C"/>-->
+<!--            <size android:height="30dp"/>-->
+<!--            <corners android:radius="9dp"/>-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--    <item android:gravity="center_vertical">-->
+<!--        <shape-->
+<!--            android:shape="rectangle">-->
+<!--&lt;!&ndash;            <solid android:color="@android:color/transparent"/>&ndash;&gt;-->
+<!--            <stroke-->
+<!--                android:color="@color/green"-->
+<!--                android:width="20dp" />-->
+<!--            <corners-->
+<!--                android:topLeftRadius="0dp"-->
+<!--                android:topRightRadius="0dp"-->
+<!--                android:bottomLeftRadius="250dp"-->
+<!--                android:bottomRightRadius="250dp" />-->
+<!--        </shape>-->
+<!--    </item>-->
+    <!-- color, size, shape height of seekbar when u drag it-->
+<!--    <item android:gravity="center_vertical">-->
+<!--        <scale android:scaleWidth="100%">-->
+<!--            <selector>-->
+<!--                <item android:state_enabled="false"-->
+<!--                    android:drawable="@color/green"/>-->
+<!--                <item>-->
+<!--                    <shape android:shape="rectangle">-->
+<!--                        <solid android:color="@color/black"/>-->
+<!--                        <size android:height="30dp"/>-->
+<!--                        <corners android:radius="9dp"/>-->
+<!--                    </shape>-->
+<!--                </item>-->
+<!--            </selector>-->
+<!--        </scale>-->
+<!--    </item>-->
+
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/> <!-- Background color -->
+        </shape>
+    </item>
+
+    <!-- Stroke without top -->
+    <item android:top="15dp" >
+        <shape android:shape="rectangle">
+            <stroke android:width="12dp" android:color="@color/green"/> <!-- Border color -->
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+</layer-list>
