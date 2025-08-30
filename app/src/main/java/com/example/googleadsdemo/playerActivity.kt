@@ -105,9 +105,6 @@ class playerActivity : AppCompatActivity() {
         recyclerView.adapter = MusicAdapter(musicList) { selectedMusic ->
             playMusic(selectedMusic.path)
         }
-//        recyclerView.adapter = MusicAdapter(musicList) { selectedMusic ->
-//
-//        }
 
     }
     private fun getAllAudioFiles(): List<MusicModel> {

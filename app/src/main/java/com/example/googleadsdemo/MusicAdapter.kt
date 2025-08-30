@@ -39,11 +39,20 @@ class MusicAdapter(
             .into(holder.poster)
 
         holder.itemView.setOnClickListener {
-            Log.d("TAG", "onBindViewHolder: " + music.title)
+
+            Log.d("TAG", "Clicked: ${music.title}")
             val context = holder.itemView.context
+
+            // Create an ArrayList of all song paths
+            val songPaths = ArrayList<String>()
+            for (item in musicList) {
+                songPaths.add(item.path)
+            }
+
+            // Pass full list and clicked index
             val intent = Intent(context, Mp3Activity::class.java)
-            intent.putExtra("music_path", music.path) // pass file path
-            intent.putExtra("music_name", music.title) // pass file name
+            intent.putStringArrayListExtra("song_list", songPaths)
+            intent.putExtra("song_index", position)
             context.startActivity(intent)
         }
     }

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
@@ -18,13 +19,10 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".DemoActivity"
+            android:name=".VideoListActivity"
             android:exported="false" />
         <activity
-            android:name=".DesignActivity"
-            android:exported="false"></activity>
-        <activity
-            android:name=".playerActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,6 +30,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DesignActivity"
+            android:exported="false" />
+        <activity
+            android:name=".playerActivity"
+            android:exported="false"></activity>
         <activity
             android:name=".Mp3Activity"
             android:exported="true">

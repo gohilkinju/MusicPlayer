@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GoogleAdsDemo</string>
+    <string name="musicPlayer">Music Player</string>
 </resources>
